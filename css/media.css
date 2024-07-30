@@ -62,3 +62,26 @@
     	margin-bottom: 10px;
     }
 }
+
+
+@media (max-width: 580px) {
+    .section-chefs h3 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 770px) {
+  .card {
+    width: calc(100% - 20px); 
+  }
+}
+@media (max-width: 770px) {
+    .cards {
+        flex-wrap: wrap;
+    }
+    .btn.Book{
+            padding: 13px 15px;
+    height: 48px;
+
+    }
+}

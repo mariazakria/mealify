@@ -18,7 +18,7 @@ ul {
     --color-text-dark: #ffffff; 
     --color-bg-dark: #000000;  
     --color-h2: #37373f;
-     --font-primary: "Amatic SC", sans-serif;
+    --font-primary: "Amatic SC", sans-serif;
 }
 
 body {
@@ -29,10 +29,10 @@ body {
     scroll-behavior: smooth;
     scroll-padding-top: 85.88px;
 }
-/* Navbar */
 
+/* Navbar */
 navbar {
-    width: 100% !important;
+    width: 100%;
     z-index: 9999;
     position: fixed;
     box-shadow: 0px 3px 14px 0px #0000001b;
@@ -87,6 +87,10 @@ navbar {
     transform: scaleX(1);
 }
 
+.nav-links li a:hover {
+    color: black;
+}
+
 .nav-links li a.home::before {
     content: "";
     position: absolute;
@@ -119,7 +123,7 @@ navbar {
     display: none;
 }
 
-/*  HEADER */
+/* Header */
 .header {
     background: #e8ebed; 
     padding: 50px 20px; 
@@ -127,8 +131,6 @@ navbar {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: relative;
-    bottom: -60px;
 }
 
 .header .container {
@@ -137,6 +139,9 @@ navbar {
     justify-content: space-between; 
     flex-wrap: wrap; 
     width: 100%; 
+    position: relative;
+    bottom: -60px;
+    margin-bottom: 30px;
 }
 
 .header .title {
@@ -146,8 +151,8 @@ navbar {
 .header .title h2 {
     font-size: 75px; 
     color: var(--color-h2); 
-     margin: 0 0 10px 0; 
-     font-family: var(--font-primary);
+    margin: 0 0 10px 0; 
+    font-family: var(--font-primary);
 }
 
 .header .title p {
@@ -179,9 +184,7 @@ navbar {
     border-radius: 0px 20px 25px 20px;
     padding: 11px 20px;
     height: 42px;
-
 }
-
 
 .btn.Book:hover {
     background-color: #e20404; 
@@ -191,10 +194,9 @@ navbar {
     display: flex;
     align-items: center;
     color: #000;
-    
 }
 
-.video:hover, .video:hover .icon i  {
+.video:hover, .video:hover .icon i {
     color: #CE1212;
 }
 
@@ -228,10 +230,6 @@ navbar {
     color: #000;
 }
 
-
-
-
-
 .header .image {
     max-width: 40%; 
 }
@@ -240,3 +238,135 @@ navbar {
     width: 100%; 
     height: auto; 
 }
+
+/* Chefs section */
+.section-chefs {
+    text-align: center;
+    position: relative;
+    margin: 50px auto;
+}
+
+.section-chefs h2 {
+    font-size: 14px;
+    color: #7F7F90;
+    font-weight: 400;
+}
+
+.section-chefs h3 {
+    font-family: var(--font-primary);
+    font-size: 50px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.section-chefs h3 span {
+    color: var(--color_text);
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.content h4 {
+    font-size: 15px;
+    color: #a9a5a5;
+}
+
+.content p {
+    font-size: 14px;
+    color: #555;
+}
+
+.card {
+    width: calc(31.333% - 13px); 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 400ms;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+.image-container .zigzag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 99;
+}
+
+.overlay {
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    bottom: 0;
+    width: 15%;
+    background: rgb(58 57 57 / 30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 600ms .5s;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.overlay ul li a {
+    color: #e0e0e8ab;
+    font-size: 20px;
+}
+
+.overlay ul li a:hover {
+    color: #4d4d52ab;   
+}
+
+/* Gallery */
+.gallery {
+    background: #e8ebed;
+    position: relative;
+    bottom: -48px;
+}
+
+
+
