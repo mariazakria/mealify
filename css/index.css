@@ -1,0 +1,242 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+a, span {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --color_text: #CE1212;
+    --color_nav: #7F7F90;
+    --color-bg: #ffffff;   
+    --color-text-dark: #ffffff; 
+    --color-bg-dark: #000000;  
+    --color-h2: #37373f;
+     --font-primary: "Amatic SC", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 85.88px;
+}
+/* Navbar */
+
+navbar {
+    width: 100% !important;
+    z-index: 9999;
+    position: fixed;
+    box-shadow: 0px 3px 14px 0px #0000001b;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3px 80px;
+    z-index: 999;
+}
+
+.logo::after {
+    content: ".";
+    color: var(--color_text);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: var(--color_nav);
+    font-size: 18px;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-links li a.home {
+    color: black;
+    font-weight: 600;
+}
+
+.nav-links li a::before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color_text);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms;
+}
+
+.nav-links li a:not(.home):hover::before {
+    transform: scaleX(1);
+}
+
+.nav-links li a.home::before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color_text);
+    transform: none;
+}
+
+.fa-solid, .fa-regular {
+    font-size: 25px;
+}
+
+.menu {
+    display: none;
+    color: black;
+}
+
+.dark, .light {
+    cursor: pointer;
+}
+
+.mode:checked ~ .dark {
+    display: none;
+}
+
+.mode:not(:checked) ~ .light {
+    display: none;
+}
+
+/*  HEADER */
+.header {
+    background: #e8ebed; 
+    padding: 50px 20px; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: -60px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    width: 100%; 
+}
+
+.header .title {
+    max-width: 50%; 
+}
+
+.header .title h2 {
+    font-size: 75px; 
+    color: var(--color-h2); 
+     margin: 0 0 10px 0; 
+     font-family: var(--font-primary);
+}
+
+.header .title p {
+    font-size: 1rem;
+    color: var(--color-h2);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    max-width: 500px;
+}
+
+.header .buttons {
+    display: flex;
+    gap: 15px; 
+    margin: 20px 0; 
+}
+
+.header .btn {
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 1rem; 
+    transition: background-color 300ms; 
+}
+
+.btn.Book {
+    background-color: #CE1212;
+    border-radius: 0px 20px 25px 20px;
+    padding: 11px 20px;
+    height: 42px;
+
+}
+
+
+.btn.Book:hover {
+    background-color: #e20404; 
+}
+
+.video {
+    display: flex;
+    align-items: center;
+    color: #000;
+    
+}
+
+.video:hover, .video:hover .icon i  {
+    color: #CE1212;
+}
+
+.video .icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.video .icon::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #CE1212; 
+    border-right-color: transparent;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.video .icon i {
+    font-size: 18px;
+    color: #000;
+}
+
+
+
+
+
+.header .image {
+    max-width: 40%; 
+}
+
+.header .image img {
+    width: 100%; 
+    height: auto; 
+}
