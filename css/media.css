@@ -1,87 +1,75 @@
 @media screen and (min-width: 1200px) {
-    .container {
-        padding: 3px 80px;
+     .container {
+         padding: 3px 80px;
     }
-
-    .fa-solid, .fa-regular {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .container {
-        padding: 3px 40px;
-    }
-
-    .fa-solid, .fa-regular {
-        font-size: 22px;
-    }
-    .nav-links {
-        display: none;
-    }
-    .menu {
-        display: block;
-    }
-    .mode_dark {
-        display: flex;
-        gap: 6px;
+     .fa-solid, .fa-regular {
+         font-size: 25px;
     }
 }
-
-@media (max-width: 990px) {
-    .header .container {
-        flex-direction: column; 
-        align-items: center; 
+ @media screen and (max-width: 1199px) {
+     .container {
+         padding: 3px 40px;
     }
-    
-    .header .image {
-        order: 1; 
-        max-width: 100%; 
+     .fa-solid, .fa-regular {
+         font-size: 22px;
     }
-
-    .header .title {
-        order: 2; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+     .nav-links {
+         display: none;
     }
-    
-
-    .header .video .icon {
-        margin-right: 0;
-        margin-bottom: 10px;
+     .menu {
+         display: block;
+    }
+     .mode_dark {
+         display: flex;
+         gap: 6px;
     }
 }
-@media (max-width: 700px) {
-    .header .buttons {
-        display: block;
-        margin: 10px auto; 
+ @media (max-width: 990px) {
+     .header .container {
+         flex-direction: column;
+         align-items: center;
     }
-    .header .btn{
-    	margin-bottom: 10px;
+     .header .image {
+         order: 1;
+         max-width: 100%;
+    }
+     .header .title {
+         order: 2;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+    }
+     .video{
+         width: 162px;
     }
 }
-
-
-@media (max-width: 580px) {
-    .section-chefs h3 {
-        font-size: 35px;
+ @media (max-width: 700px) {
+     .header .buttons {
+         display: block;
+    }
+     .header .btn{
+         margin-bottom: 10px;
     }
 }
-
-@media (max-width: 770px) {
-  .card {
-    width: calc(100% - 20px); 
-  }
-}
-@media (max-width: 770px) {
-    .cards {
-        flex-wrap: wrap;
+ @media (max-width: 580px) {
+     .section-chefs h3 {
+         font-size: 28px;
     }
-    .btn.Book{
-            padding: 13px 15px;
-    height: 48px;
-
+}
+ @media (max-width: 770px) {
+     .card {
+         width: calc(100% - 20px);
+    }
+}
+ @media (max-width: 770px) {
+     .cards {
+         flex-wrap: wrap;
+    }
+     .btn.Book{
+         padding: 8px 5px 0px;
+         height: 38px;
+         width: 124px;
+         margin-bottom: 16px;
     }
 }
