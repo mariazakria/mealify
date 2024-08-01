@@ -510,3 +510,124 @@ navbar {
             text-decoration: underline;
         }
 */
+
+
+
+
+
+
+
+
+
+/* تنسيق الأساس */
+.contact-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+    position: relative;
+    right: -86px;
+    width: 90%;
+    max-width: 1160px;
+}
+
+.contact-form {
+    display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* space between items */
+            padding: 20px;
+            max-width: 1200px; /* adjust based on your layout */
+            margin: 20px auto 0 auto; /* Adjusted to add space between iframe and details */
+}
+
+.contact-form .grp {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px; /* المسافة بين الحقول */
+}
+
+.contact-form .grp input {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+textarea {
+    height: 200px; /* تحديد الطول */
+    width: 100%; /* الحفاظ على العرض ثابت */
+    resize: vertical; /* السماح بتغيير الحجم عمودياً فقط */
+}
+
+.contact-form button {
+    width: 14%;
+    cursor: pointer;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    transition: background-color 0.3s;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto; /* توسيط الزر */
+}
+
+.contact-form button:hover {
+    background-color: #e5533d;
+}
+
+/* الإعلامات الإعلامية */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 100%;
+        right: 0;
+        padding: 15px;
+    }
+
+    .contact-form button {
+        width: 36%;
+        margin-top: 10px;
+    }
+
+    .contact-form .grp {
+        flex-direction: column;
+    }
+
+    .contact-form .grp input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        padding: 12px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .contact-form .grp {
+        gap: 10px;
+    }
+}
