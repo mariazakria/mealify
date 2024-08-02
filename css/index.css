@@ -580,17 +580,20 @@
 }
 /*footer*/
  .footer {
+
      color: #fff;
      padding: 0px;
      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/footer.jpg);
 }
  .footer .container {
-     display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
-     max-width: 1300px;
-     margin: 0 auto;
-     padding: 0 20px;
+         display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
  .img-footer img {
      width: 40px;
@@ -601,12 +604,12 @@
      vertical-align: middle;
      font-size: 2rem;
 }
-.img-footer
+/*.img-footer
 {
       position: relative;
     top: -10px;
 
-}
+}*/
 
  .img-footer h2::after{
      content: ".";
@@ -640,9 +643,9 @@
      margin-top: 47px;
 }
  .newsletter, .quick-links, .contact-details {
-     max-width: 500px;
-    /* margin-top: 20px;
-    */
+    max-width: 500px;
+    /* margin-top: 20px; */
+    margin: 13px;
 }
  .newsletter h3, .quick-links h3, .contact-details h3 {
      margin-bottom: 10px;
@@ -678,8 +681,15 @@
 }
  .quick-links ul li{
      padding: 0.5rem;
-     width: 40%;
+     width: 41%;
      transition: all 500ms ease-in-out;
+}
+@media screen and (max-width: 460px) {
+    .quick-links ul li {
+        width: 49%;
+    transition: all 500ms ease-in-out;
+    padding: 0px;
+    }
 }
  .quick-links ul li a, .contact-details ul li a {
      color: #fff;
@@ -711,13 +721,14 @@
     margin-bottom: 10px;
 }
  
-.contact-details{
+/*.contact-details{
   position: relative;
-    top: -35px;
-}
+    top: -30px;
+}*/
 
 .copyright{
   color: #aaa;
+      text-align: center !important;
 }
 
 
@@ -725,65 +736,3 @@
 .copyright a{
   color: var(--color_text);
 }
-@media screen and(min-width:768){
-  /* Newsletter section */
-.newsletter {
-    margin-top: 47px;
-    width: 100%;
-    text-align: center;
-}
-
-.newsletter, .quick-links, .contact-details {
-    max-width: 100%; /* Adjust to take full width on small screens */
-}
-
-/* Styling for subscription form */
-.Subscribe {
-    display: flex;
-    flex-direction: column; /* Stack input and button vertically on small screens */
-}
-
-.Subscribe input[type="email"] {
-    padding: 10px;
-    border: none;
-    width: 100%; /* Full width on small screens */
-    margin-bottom: 10px; /* Space between input and button */
-    outline: none;
-}
-
-.Subscribe button {
-    background-color: var(--color_text);
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    width: 100%; /* Full width on small screens */
-}
- .newsletter{
-     margin-top: 47px;
-}
- .newsletter, .quick-links, .contact-details {
-     max-width: 500px;
-    /* margin-top: 20px;
-    */
-}
-}
-
-
-@media screen and (max-width: 768px) {
-    footer .container :is(.about, .contact-details, .subscription) {
-        width: 100%;
-        order: 0;
-    }
-}
-@media screen and (max-width: 1200px) {
-    footer .container :is(.about, .contact-details) {
-        width: calc(calc(100% - var(--gap)) / 2);
-        order: 1;
-    }
-}
-@media screen and (max-width: 1200px) {
-    .container {
-        max-width: 960px;
-    }
-
-  
