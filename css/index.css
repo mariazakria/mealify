@@ -580,24 +580,17 @@
 }
 /*footer*/
  .footer {
-
+    background-position: right;
+    color: var(--light-bg-white);
+    padding: 2rem 0;
      color: #fff;
-     padding: 0px;
      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/footer.jpg);
 }
- .footer .container {
-         display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+
  .img-footer img {
      width: 40px;
      vertical-align: middle;
+
 }
  .img-footer h2 {
      display: inline-block;
@@ -736,3 +729,60 @@
 .copyright a{
   color: var(--color_text);
 }
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@media (max-width: 992px) {
+    footer .container {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 770px) {
+    .Subscribe {
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+        align-items: stretch; /* تمديد العناصر لملء العرض الكامل */
+    }
+
+    .Subscribe input[type="email"] {
+        margin-bottom: 10px; /* إضافة مسافة بين المدخل وزر الاشتراك */
+        max-width: 100%; /* جعل العرض 100% */
+    }
+
+    .Subscribe button {
+        margin-left: 0; /* إزالة الهامش الأيسر */
+    }
+    .btn-main{
+          padding: 10px;
+    }
+    .img-footer{
+          width: 90%;
+
+    }
+    footer .container {
+        flex-direction: column;
+    }
+}
+
+
+
+}
+ .footer .container {
+     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+
+    align-items: flex-start;
+    max-width: 1300px;
+    }
