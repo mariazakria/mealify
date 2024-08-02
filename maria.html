@@ -8,17 +8,6 @@
  ul {
      list-style: none;
 }
-::-webkit-scrollbar {
-  width: 10px;
-  background-color: #fff;
-  border-left: 2px solid #eee;
-  box-shadow: 0px 0px 21px 0px #0003 inset;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #000;
-  box-shadow: 0px 0px 10px 0px #eeeeee8c inset;
-  border-radius: 100vh;
-}
  :root {
      --color_text: #CE1212;
      --color_nav: #7F7F90;
@@ -399,6 +388,8 @@
 /*contact*/
  .contact {
          padding: 4rem 0;
+         background-color: #f8f9fa;
+     text-align: center;
 }
  .contact .container {
      margin-bottom: -70px;
@@ -409,10 +400,7 @@
      margin-top: -60px;
      max-width: 1160px;
 }
- .contact {
-     background-color: #f8f9fa;
-     text-align: center;
-}
+
  .contact .container {
      max-width: 1200px;
      margin: 0 auto;
@@ -580,175 +568,128 @@
          width: 100%;
     }
 }
-/* Footer Styling */
-.footer {
-    color: #fff;
-    padding: 0px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/footer.jpg);
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the content horizontally */
+/*footer*/
+ .footer {
+     color: #fff;
+     padding: 0px;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/footer.jpg);
+}
+ .footer .container {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     max-width: 1300px;
+     margin: 0 auto;
+     padding: 0 20px;
+}
+ .img-footer img {
+     width: 40px;
+     vertical-align: middle;
+}
+ .img-footer h2 {
+     display: inline-block;
+     vertical-align: middle;
+     font-size: 2rem;
+}
+ .img-footer h2::after{
+     content: ".";
+     color: var(--color_text);
+}
+ .img-footer p {
+     margin-top: 0px;
+     font-size: 1rem;
+     max-width: 300px;
+}
+ .social-footer h3{
+     text-align: center;
+     font-size: 21px;
+     border-bottom: 2px solid #ddd6;
+     padding: 8px;
+}
+ .social-footer ul {
+     display: flex;
+     justify-content: space-around;
+}
+ .social-footer ul li {
+     display: inline;
+     margin-right: 10px;
+}
+ .social-footer ul li a {
+     color: #fff;
+     font-size: 27px;
+}
+ .newsletter{
+     margin-top: 47px;
+}
+ .newsletter, .quick-links, .contact-details {
+     max-width: 500px;
+    /* margin-top: 20px;
+    */
+}
+ .newsletter h3, .quick-links h3, .contact-details h3 {
+     margin-bottom: 10px;
+}
+ .Subscribe {
+     display: flex;
+}
+ .Subscribe input[type="email"] {
+     padding: 10px;
+     border: none;
+     flex: 1;
+     max-width: 420px;
+     outline: none;
+}
+ .Subscribe button {
+     background-color: #ff6347;
+     border: none;
+     color: #fff;
+     cursor: pointer;
+     background-color: var(--color_text);
+     margin-left: 10px;
+}
+ .btn .fa-envelope{
+     font-size: 17px;
+}
+ .quick-links ul, .contact-details ul {
+     list-style: none;
+     padding: 0;
+}
+ .quick-links ul {
+     display: flex;
+     flex-wrap: wrap;
+}
+ .quick-links ul li{
+     padding: 0.5rem;
+     width: 40%;
+     transition: all 500ms ease-in-out;
+}
+ .quick-links ul li a, .contact-details ul li a {
+     color: #fff;
+     text-decoration: none;
+     position: relative;
+     display: inline-block;
+     transition: transform 0.3s ease;
+}
+ .quick-links ul li a::before {
+     content: "\01F846";
+     padding: 0 0.5rem;
+}
+ .quick-links ul li:hover {
+     transform: translateX(10px);
+     background-color: #222;
 }
 
-/* Container within the footer */
-.footer .container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Other styles ... */
-.img-footer img {
-    width: 40px;
-    vertical-align: middle;
-}
-
-.img-footer h2 {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 2rem;
-}
-
-.img-footer {
-    position: relative;
-    top: -10px;
-}
-
-.img-footer h2::after {
-    content: ".";
-    color: var(--color_text);
-}
-
-.img-footer p {
-    margin-top: 0px;
-    font-size: 1rem;
-    max-width: 300px;
-}
-
-.social-footer h3 {
-    text-align: center;
-    font-size: 21px;
-    border-bottom: 2px solid #ddd6;
-    padding: 8px;
-}
-
-.social-footer ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-.social-footer ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.social-footer ul li a {
-    color: #fff;
-    font-size: 27px;
-}
-
-.newsletter {
-    margin-top: 47px;
-}
-
-.newsletter, .quick-links, .contact-details {
-    max-width: 500px;
-}
-
-.newsletter h3, .quick-links h3, .contact-details h3 {
-    margin-bottom: 10px;
-}
-
-.Subscribe {
-    display: flex;
-}
-
-.Subscribe input[type="email"] {
-    padding: 10px;
-    border: none;
-    flex: 1;
-    max-width: 420px;
-    outline: none;
-}
-
-.Subscribe button {
-    background-color: var(--color_text);
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.btn .fa-envelope {
-    font-size: 17px;
-}
-
-.quick-links ul, .contact-details ul {
-    list-style: none;
-    padding: 0;
-}
-
-.quick-links ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.quick-links ul li {
-    padding: 0.5rem;
-    width: 40%;
-    transition: all 500ms ease-in-out;
-}
-
-.quick-links ul li a, .contact-details ul li a {
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.quick-links ul li a::before {
-    content: "\01F846";
-    padding: 0 0.5rem;
-}
-
-.quick-links ul li:hover {
-    transform: translateX(10px);
-    background-color: #222;
-}
-
-.contact-details ul li i {
-    margin-right: 10px;
-    color: var(--color_text);
+ .contact-details ul li i {
+     margin-right: 10px;
+         color: var(--color_text);
     font-size: 25px;
+
 }
 
-.contact-details ul li {
+  .contact-details ul li {
     width: 100%;
     gap: 10px;
     display: flex;
-    align-items: center;
     margin-bottom: 10px;
 }
-
-.contact-details {
-    position: relative;
-    top: -55px;
-}
-
-.copyright {
-    color: #aaa;
-    margin-top: 20px; /* Space between the content and the copyright */
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    width: 100%; /* Ensure it takes up full width */
-}
-
-.copyright a {
-    color: var(--color_text);
-    font-weight: bold;
-}
+ 
