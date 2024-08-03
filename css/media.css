@@ -1,117 +1,133 @@
 @media screen and (min-width: 1200px) {
-    .container {
-        padding: 3px 80px;
+     .container {
+         padding: 3px 80px;
     }
-    .fa-solid, .fa-regular {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .container {
-        padding: 3px 40px;
-    }
-    .fa-solid, .fa-regular {
-        font-size: 22px;
-    }
-    .nav-links {
-        display: none;
-    }
-    .menu {
-        display: block;
-    }
-    .mode_dark {
-        display: flex;
-        gap: 6px;
+     .fa-solid, .fa-regular {
+         font-size: 25px;
     }
 }
-
-@media screen and(max-width: 990px) {
-    .header .container {
-        flex-direction: column;
-        align-items: center;
+ @media screen and (max-width: 1199px) {
+     .container {
+         padding: 3px 40px;
     }
-    .header .image {
-        order: 1;
-        max-width: 100%;
+     .fa-solid, .fa-regular {
+         font-size: 22px;
     }
-    .header .title {
-        order: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+     .nav-links {
+         display: none;
     }
-    .video {
-        width: 162px;
+     .menu {
+         display: block;
+    }
+     .mode_dark {
+         display: flex;
+         gap: 6px;
     }
 }
-
-@media (max-width: 770px) {
-    .card {
-        width: calc(100% - 20px);
+ @media (max-width: 990px) {
+     .header .container {
+         flex-direction: column;
+         align-items: center;
     }
-    .cards {
-        flex-wrap: wrap;
+     .header .image {
+         order: 1;
+         max-width: 100%;
     }
-    .btn.Book {
-        padding: 8px 5px 0px;
-        height: 38px;
-        width: 124px;
-        margin-bottom: 16px;
+     .header .title {
+         order: 2;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
     }
-    .gallery-photos {
-        display: block;
-    }
-    .gallery-photos > div {
-        margin-bottom: 20px;
-    }
-    .Subscribe {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .Subscribe input[type="email"] {
-        margin-bottom: 10px;
-        max-width: 100%;
-    }
-    .Subscribe button {
-        margin-left: 0;
-    }
-    .btn-main {
-        padding: 10px;
-    }
-    .img-footer {
-        width: 90%;
-    }
-    footer .container {
-        flex-direction: column;
+     .video{
+         width: 162px;
     }
 }
-
-@media (max-width: 768px) {
-    .contact-container {
-        width: 100%;
-        right: 0;
-        padding: 15px;
+ @media (max-width: 700px) {
+     .header .buttons {
+         display: block;
     }
-    .contact-form button {
-        margin-top: 10px;
-    }
-    .contact-form .grp {
-        flex-direction: column;
-    }
-    .contact-form .grp input {
-        width: 100%;
-    }
-    .details > div {
-        flex: 1 1 100%;
+     .header .btn{
+         margin-bottom: 10px;
     }
 }
-
-@media screen and (max-width: 460px) {
-    .quick-links ul li {
-        width: 49%;
-        transition: all 500ms ease-in-out;
-        padding: 0px;
+ @media (max-width: 580px) {
+     .section-chefs h3 {
+         font-size: 28px;
+    }
+}
+ @media (max-width: 770px) {
+     .card {
+         width: calc(100% - 20px);
+    }
+}
+ @media (max-width: 770px) {
+     .cards {
+         flex-wrap: wrap;
+    }
+     .btn.Book{
+         padding: 8px 5px 0px;
+         height: 38px;
+         width: 124px;
+         margin-bottom: 16px;
+    }
+}
+ @media screen and (max-width: 460px) {
+     .quick-links ul li {
+         width: 49%;
+         transition: all 500ms ease-in-out;
+         padding: 0px;
+    }
+}
+ @media screen and (max-width: 770px) {
+     .Subscribe {
+         flex-direction: column;
+         align-items: stretch;
+    }
+     .Subscribe input[type="email"] {
+         margin-bottom: 10px;
+         max-width: 100%;
+    }
+     .Subscribe button {
+         margin-left: 0;
+    }
+     .btn-main {
+         padding: 10px;
+    }
+     .img-footer {
+         width: 90%;
+    }
+     footer .container {
+         flex-direction: column;
+    }
+}
+ @media (max-width: 768px) {
+     .contact-container {
+         width: 100%;
+         right: 0;
+         padding: 15px;
+    }
+     .contact-form button {
+         margin-top: 10px;
+    }
+     .contact-form .grp {
+         flex-direction: column;
+    }
+     .contact-form .grp input {
+         width: 100%;
+    }
+}
+ @media (max-width: 768px) {
+     .details > div {
+         flex: 1 1 100%;
+    }
+}
+ @media (max-width: 770px) {
+     .gallery-photos {
+         display: block;
+    }
+     .gallery-photos > div {
+         margin-bottom: 20px;
     }
 }
