@@ -736,7 +736,8 @@ footer .container {
     margin: 0 auto;
     padding: 0 20px;
 }
-
-
-
-
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 2px solid var(--color_text);
+}
