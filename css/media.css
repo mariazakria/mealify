@@ -1,133 +1,225 @@
-@media screen and (min-width: 1200px) {
-     .container {
-         padding: 3px 80px;
+@media screen and (max-width: 300px) {
+    :root {
+      font-size: 12px;
     }
-     .fa-solid, .fa-regular {
-         font-size: 25px;
+  }
+  /*^========> Container <========*/
+  @media screen and (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
     }
-}
- @media screen and (max-width: 1199px) {
-     .container {
-         padding: 3px 40px;
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .container {
+      max-width: 1140px;
     }
-     .fa-solid, .fa-regular {
-         font-size: 22px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .container {
+      max-width: 960px;
     }
-     .nav-links {
-         display: none;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .container {
+      max-width: 720px;
     }
-     .menu {
-         display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 540px;
     }
-     .mode_dark {
-         display: flex;
-         gap: 6px;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .container {
+      padding-inline: 15px;
     }
-}
- @media (max-width: 990px) {
-     .header .container {
-         flex-direction: column;
-         align-items: center;
+  }
+  
+  /*^========> Navbar <========*/
+  @media screen and (max-width: 1200px) {
+    nav .nav-links {
+      --inline-gap: 0px;
+      --block-gap: 15px;
+      transform: translateX(100%);
+      position: absolute;
+      z-index: 999;
+      width: 350px;
+      height: 100%;
+      background-color: #fff;
+      border-left: 2px solid #f1f1f1;
+      right: 0;
+      top: 0;
+      flex-direction: column;
+      transition: transform 400ms;
     }
-     .header .image {
-         order: 1;
-         max-width: 100%;
+  
+    nav .nav-links .close-icon {
+      display: block;
+      padding: 10px 15px 5px;
     }
-     .header .title {
-         order: 2;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         text-align: center;
+  
+    nav .nav-links a:not(.active):hover::before {
+      width: 0px;
     }
-     .video{
-         width: 162px;
+  
+    nav .nav-links a {
+      width: 100%;
+      padding: var(--block-gap) 10px;
     }
-}
- @media (max-width: 700px) {
-     .header .buttons {
-         display: block;
+  
+    nav .nav-links a::before {
+      bottom: 2px;
     }
-     .header .btn{
-         margin-bottom: 10px;
+  
+    nav .menu-icon {
+      display: block;
     }
-}
- @media (max-width: 580px) {
-     .section-chefs h3 {
-         font-size: 28px;
+  
+    nav .mode-group {
+      margin-left: auto;
+      margin-right: 20px;
     }
-}
- @media (max-width: 770px) {
-     .card {
-         width: calc(100% - 20px);
+  }
+  
+  /*^========> Header <========*/
+  @media screen and (min-width: 1200px) {
+    /* yb2a wa5d elscreen mn 1200 wna tal3 */
+    header {
+      min-height: 100vh;
     }
-}
- @media (max-width: 770px) {
-     .cards {
-         flex-wrap: wrap;
+  }
+  
+  @media screen and (max-width: 992px) {
+    header .container {
+      flex-direction: column-reverse;
+      gap: 50px;
     }
-     .btn.Book{
-         padding: 8px 5px 0px;
-         height: 38px;
-         width: 124px;
-         margin-bottom: 16px;
+    header .container > * {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-}
- @media screen and (max-width: 460px) {
-     .quick-links ul li {
-         width: 49%;
-         transition: all 500ms ease-in-out;
-         padding: 0px;
+    header .btn-main {
+      --border-radius: 100vh;
     }
-}
- @media screen and (max-width: 770px) {
-     .Subscribe {
-         flex-direction: column;
-         align-items: stretch;
+  }
+  @media screen and (max-width: 400px) {
+    .header-content .btn-group {
+      flex-direction: column;
+      gap: 20px;
     }
-     .Subscribe input[type="email"] {
-         margin-bottom: 10px;
-         max-width: 100%;
+  }
+  
+  /*^========> Chefs <========*/
+  @media screen and (max-width: 992px) {
+    .chefs-cards .card {
+      width: calc(calc(100% - var(--gap)) / 2);
     }
-     .Subscribe button {
-         margin-left: 0;
+  }
+  @media screen and (max-width: 768px) {
+    .chefs-cards .card {
+      width: 100%;
     }
-     .btn-main {
-         padding: 10px;
+  }
+  
+  /*^========> Gallery <========*/
+  @media screen and (max-width: 1400px) {
+    .gallery-photos {
+      height: 1000px;
     }
-     .img-footer {
-         width: 90%;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .gallery-photos {
+      height: 845px;
     }
-     footer .container {
-         flex-direction: column;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .gallery-photos {
+      height: 1405px;
     }
-}
- @media (max-width: 768px) {
-     .contact-container {
-         width: 100%;
-         right: 0;
-         padding: 15px;
+  
+    .gallery-photos picture {
+      width: calc(calc(100% - var(--gap)) / 2);
     }
-     .contact-form button {
-         margin-top: 10px;
+  
+    .gallery .pizza {
+      order: 1;
     }
-     .contact-form .grp {
-         flex-direction: column;
+    .gallery .fried {
+      order: 6;
     }
-     .contact-form .grp input {
-         width: 100%;
+    .gallery .omelette {
+      order: 4;
     }
-}
- @media (max-width: 768px) {
-     .details > div {
-         flex: 1 1 100%;
+    .gallery .kofta {
+      order: 7;
     }
-}
- @media (max-width: 770px) {
-     .gallery-photos {
-         display: block;
+    .gallery .burger {
+      order: 2;
     }
-     .gallery-photos > div {
-         margin-bottom: 20px;
+    .gallery .pizza-slices {
+      order: 3;
     }
-}
+    .gallery .steak {
+      order: 5;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .gallery-photos {
+      height: auto;
+    }
+    .gallery-photos picture {
+      width: 100%;
+    }
+  }
+  /*^========> Contacts <========*/
+  @media screen and (max-width: 992px) {
+    .contact .input-group input {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact .details > div {
+      width: 100%;
+    }
+  }
+  
+  /*^========> Footer <========*/
+  
+  @media screen and (max-width: 1200px) {
+    footer .container :is(.about, .contact-details) {
+      width: calc(calc(100% - var(--gap)) / 2);
+      order: 1;
+    }
+  
+    footer .container :is(.subscription) {
+      width: 100%;
+      order: 2;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    footer .container :is(.about, .contact-details, .subscription) {
+      width: 100%;
+      order: 0;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    footer .sunscription-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
